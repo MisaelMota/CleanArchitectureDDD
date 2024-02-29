@@ -25,7 +25,7 @@ namespace CleanArchitecture.Application.Features.Streamers.Commands.CreateStream
             _streamerRepository = streamerRepository;
             _mapper = mapper;
             _emailService = emailService;
-            _logger = logger;
+            _logger = logger;   
         }
 
         public async Task<int> Handle(CreateStreamerCommand request, CancellationToken cancellationToken)
